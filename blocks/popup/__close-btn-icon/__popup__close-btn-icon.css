@@ -1,0 +1,10 @@
+@media screen and (max-width: 550px) {
+  .popup__close-btn-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.popup__close-btn:hover .popup__close-btn-icon {
+  opacity: 60%;
+}
