@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Место</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/logo_header.svg" alt="Место">
+    </header>
+    <main>
+      <section class="profile">
+        <img class="profile__avatar" src="./images/avatar.jpg" alt="Фото профиля">
+        <h1 class="profile__name">Жак-Ив Кусто</h1>
+        <p class="profile__about">Исследователь океана</p>
+        <button class="profile__edit-btn" type="button"></button>
+        <button class="profile__add-btn" type="button"></button>
+      </section>
+      <section class="elements">
+        <ul class="elements__list">
+          <li class="element">
+            <img class="element__img" src="./images/kirill-pershin-1088404-unsplash.jpg"
+              alt="Карачаевск">
+            <div class="element__text">
+              <h2 class="element__title">Карачаевск</h2>
+              <button class="element__heart" type="button"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img class="element__img" src="./images/kirill-pershin-1404681-unsplash.jpg"
+              alt="Домбай">
+            <div class="element__text">
+              <h2 class="element__title">Домбай</h2>
+              <button class="element__heart" type="button"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img class="element__img" src="./images/kirill-pershin-1556355-unsplash.jpg"
+              alt="Гора Эльбрус">
+            <div class="element__text">
+              <h2 class="element__title">Гора Эльбрус</h2>
+              <button class="element__heart" type="button"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img class="element__img" src="./images/kirill-pershin-1088404-unsplash.jpg"
+              alt="Карачаевск">
+            <div class="element__text">
+              <h2 class="element__title">Карачаевск</h2>
+              <button class="element__heart" type="button"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img class="element__img" src="./images/kirill-pershin-1404681-unsplash.jpg"
+              alt="Домбай">
+            <div class="element__text">
+              <h2 class="element__title">Домбай</h2>
+              <button class="element__heart" type="button"></button>
+            </div>
+          </li>
+          <li class="element">
+            <img class="element__img" src="./images/kirill-pershin-1556355-unsplash.jpg"
+              alt="Гора Эльбрус">
+            <div class="element__text">
+              <h2 class="element__title">Гора Эльбрус</h2>
+              <button class="element__heart" type="button"></button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__legal">&#169; 2023 Mesto Russia</p>
+    </footer>
+    <section class="popup">
+      <div class="popup__container">
+        <button type="button" class="popup__close-btn"></button>
+        <form class="popup__form" method="get" name="profile-form">
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <input class="popup__input popup__input_type_name"
+            type="text"
+            name="user-name"
+            placeholder="Введите ваше имя"
+            minlength="2"
+            required>
+          <input class="popup__input popup__input_type_about"
+            type="text"
+            name="user-about"
+            placeholder="Добавьте описание"
+            minlength="2"
+            maxlength="200"
+            required>
+          <button type="submit" class="popup__save-btn">Сохранить</button>
+        </form>
+      </div>
+    </section>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
