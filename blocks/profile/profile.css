@@ -1,0 +1,41 @@
+.profile {
+  max-width: 880px;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 132px minmax(290px, max-content) 1fr 150px;
+  grid-template-areas:
+    "avatar name edit-btn add-btn"
+    "avatar text . add-btn";
+  row-gap: 9px;
+  column-gap: 18px;
+}
+
+@media screen and (max-width: 879px) {
+  .profile {
+    max-width: 660px;
+    grid-template-columns: 120px 312px 1fr 150px;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .profile {
+    max-width: 282px;
+    grid-template-columns: 1fr 214px 28px 1fr;
+    grid-template-areas:
+      ". avatar avatar ."
+      ". name edit-btn ."
+      ". text text ."
+      ". add-btn add-btn .";
+    column-gap: 10px;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .profile {
+    padding-top: 39px;
+    row-gap: 0;
+    column-gap: 0;
+  }
+}
